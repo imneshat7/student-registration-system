@@ -1,16 +1,94 @@
-# React + Vite
+# 🍔 FoodExpress - Food Delivery App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, full-featured food delivery application built with React, Vite, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🏪 **Restaurant Listings** - Browse through multiple restaurants with different cuisines
+- 🍕 **Menu Browsing** - View detailed menus for each restaurant
+- 🛒 **Shopping Cart** - Add items to cart with quantity management
+- 📦 **Order Management** - Track your order history
+- 💳 **Checkout System** - Complete checkout with delivery information
+- 🎨 **Beautiful UI** - Modern, responsive design with Tailwind CSS
+- 💾 **Local Storage** - Cart and orders persist in browser storage
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React 19** - UI library
+- **Vite** - Build tool and dev server
+- **React Router DOM** - Client-side routing
+- **Tailwind CSS** - Utility-first CSS framework
+- **Context API** - State management for cart and orders
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Installation
+
+```bash
+npm install
+```
+
+### Development
+
+```bash
+npm run dev
+```
+
+The app will be available at `http://localhost:5173`
+
+### Build
+
+```bash
+npm run build
+```
+
+### Preview Production Build
+
+```bash
+npm run preview
+```
+
+## Project Structure
+
+```
+src/
+├── components/          # React components
+│   ├── Header.jsx      # Navigation header
+│   ├── RestaurantList.jsx
+│   ├── RestaurantCard.jsx
+│   ├── RestaurantDetail.jsx
+│   ├── MenuItem.jsx
+│   ├── Cart.jsx
+│   ├── Checkout.jsx
+│   └── Orders.jsx
+├── context/            # Context providers
+│   ├── CartContext.jsx
+│   └── OrderContext.jsx
+├── data/              # Static data
+│   └── restaurants.js
+├── App.jsx            # Main app component with routing
+└── main.jsx           # Entry point
+```
+
+## Features in Detail
+
+### Restaurant Browsing
+- Filter restaurants by cuisine type
+- Search restaurants by name or cuisine
+- View restaurant ratings, delivery time, and fees
+
+### Shopping Cart
+- Add/remove items
+- Adjust quantities
+- View cart total with delivery fees
+- Items grouped by restaurant
+
+### Order Management
+- Complete checkout flow
+- Order history tracking
+- Order status display
+- Delivery information management
+
+## License
+
+MIT
